@@ -1,0 +1,31 @@
+{
+  "fields": [
+    {
+      "name": "lat",
+      "title": "latitude",
+      "description": "Latitude, decimal degrees of building centroid or entrance. (EPSG:4326)",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "lon",
+      "title": "longitude",
+      "description": "Longitude, decimal degrees of building centroid or entrance. (EPSG:4326)",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "name",
+      "title": "place name",
+      "description": "A description that may help identify the facility (eg, '6 Smith St, Milton, Qld 4066' or 'Smith Reserve Playground')",
+      "type": "string",
+      "format": "default",
+    }
+  ]
+}
