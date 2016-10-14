@@ -2,7 +2,7 @@
   "fields": [
     {
       "name": "lat",
-      "title": "latitude",
+      "title": "Latitude",
       "description": "Latitude, decimal degrees of building centroid or entrance. (EPSG:4326)",
       "type": "number",
       "format": "default",
@@ -12,7 +12,7 @@
     },
     {
       "name": "lon",
-      "title": "longitude",
+      "title": "Longitude",
       "description": "Longitude, decimal degrees of building centroid or entrance. (EPSG:4326)",
       "type": "number",
       "format": "default",
@@ -22,10 +22,274 @@
     },
     {
       "name": "name",
-      "title": "place name",
+      "title": "Place name",
       "description": "A description that may help identify the facility (eg, '6 Smith St, Milton, Qld 4066' or 'Smith Reserve Playground')",
       "type": "string",
       "format": "default",
-    }
+    },
+    {
+      "name": "female",
+      "title": "Female toilet",
+      "description": "Female toilets are available (yes,no).",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "male",
+      "title": "Male toilet",
+      "description": "Male toilets are available (yes,no).",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "unisex",
+      "title": "Unisex toilet",
+      "description": "Unisex toilets are available (yes,no).",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "female_ambulant",
+      "title": "Female ambulant toilet",
+      "description": "Female ambulant toilets are available (yes,no). Ambulant toilets comply with the AS1428.1-2009 standard. ",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "male_ambulant",
+      "title": "Male ambulant toilet",
+      "description": "Male ambulant toilets are available (yes,no). Ambulant toilets comply with the AS1428.1-2009 standard.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "unisex_ambulant",
+      "title": "Unisex ambulant toilet",
+      "description": "Unisex toilets are available (yes,no). Ambulant toilets comply with the AS1428.1-2009 standard.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "female_accessible",
+      "title": "Female accessible toilet",
+      "description": "Female accessible toilets are available (yes,no). Accessible toilets comply with the AS1428.1-2009 standard.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "male_accessible",
+      "title": "Male accessible toilet",
+      "description": "Male accessible toilets are available (yes,no). Accessible toilets comply with the AS1428.1-2009 standard.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "unisex_accessible",
+      "title": "Unisex accessible toilet",
+      "description": "Unisex accessible toilets are available (yes,no). Accessible toilets comply with the AS1428.1-2009 standard.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "unisex_accessible_room_width",
+      "title": "Unisex accessible room width",
+      "description": "Width of the unisex accessible room (in mm). Standard width is a minimum of 1900mm.",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "unisex_accessible_room_length",
+      "title": "Unisex accessible room length",
+      "description": "Lenght of the unisex accessible room (in mm). Standard length is a minimum of 2300mm.",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "unisex_accessible_seat_height",
+      "title": "Unisex accessible toilet seat height",
+      "description": "Height of the toilet seat off the floor (in mm) in the unisex accessible toilet. Standard height is 460-480mm.",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "shelf",
+      "title": "Shelf",
+      "description": "A shelf is available in unisex accessible toilet (yes/no)",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "shower",
+      "title": "Shower",
+      "description": "A shower is available within the unisex accessible toilet (yes/no)",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "changing_place",
+      "title": "Adult changing place",
+      "description": "An adult changing place is available (yes/no). Changing places have full size change tables and hoists and comply with the changing places specification http://changingplaces.org.au/build-a-toilet/. ",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "handwashing_basin",
+      "title": "Handwashing basin",
+      "description": "Water is available for hand washing (yes, no)",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "baby_change_table",
+      "title": "Baby change table",
+      "description": "A baby change table is is available. a special piece of furniture that you put a baby on when you change its nappy (yes/no).",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "toilet_entry_signage",
+      "title": "Toilet entry signage",
+      "description": "Braile tactile signage at the entrance to disability toilet for visually impaired (yes/no)",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "trsfr_side",
+      "title": "Transfer grabrail side",
+      "description": "Side the transfer grabrail is located for the unisex accessible toilet (left, right, both).",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(left|right|both)"
+      }
+    },
+    {
+      "name": "week_open",
+      "title": "Weekday opening time",
+      "description": "Time the toilets open on weekdays, in 0-padded 24 hour time. Code 00:00 for always open or always closed.  ",
+      "type": "time",
+      "format": "fmt:%H:%M"
+    },
+    {
+      "name": "week_close",
+      "title": "Weekday closing time",
+      "description": "Time the toilets close on weekdays, in 0-padded 24 hour time. Code 24:00 for always open, 00:00 for always closed. ",
+      "type": "time",
+      "format": "fmt:%H:%M"
+    },
+    {
+      "name": "sat_open",
+      "title": "Saturday opening time",
+      "description": "Time the toilets open on Saturdays, in 0-padded 24 hour time. Code 00:00 for always open or always closed.  ",
+      "type": "time",
+      "format": "fmt:%H:%M"
+    },
+    {
+      "name": "sat_close",
+      "title": "Saturday closing time",
+      "description": "Time the toilets close on Saturdays, in 0-padded 24 hour time. Code 24:00 for always open, 00:00 for always closed. ",
+      "type": "time",
+      "format": "fmt:%H:%M"
+    },
+    {
+      "name": "sun_open",
+      "title": "Sunday opening time",
+      "description": "Time the toilets open on Sundays, in 0-padded 24 hour time. Code 00:00 for always open or always closed.  ",
+      "type": "time",
+      "format": "fmt:%H:%M"
+    },
+    {
+      "name": "sun_close",
+      "title": "Sunday closing time",
+      "description": "Time the toilets close on Sundays, in 0-padded 24 hour time. Code 24:00 for always open, 00:00 for always closed. ",
+      "type": "time",
+      "format": "fmt:%H:%M"
+    },
+    {
+      "name": "comment",
+      "title": "Opening hours comment",
+      "description": "Any additional comments, such as for opening hours that can’t be represented in the above scheme. E.g. If the toilet only open seasonally when people are in the area.",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "access_cmt",
+      "title": "Accessibility comment",
+      "description": "Additional comments about accessibility, such as if the toilets are inside a building that is difficult to access, requires a fee to use, key to access, or can be accessed using a Master Locksmiths Association Key (MLAK)",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "needle_bin",
+      "title": "Syringe disposal bin",
+      "description": "A syringe disposal bin is avaiable (yes/no).",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "drink_tap",
+      "title": "Drinking water tap",
+      "description": "Drinking water is available (yes/no)",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "pattern": "(yes|no)"
+      }
+    },
+    {
+      "name": "operator",
+      "title": "Operator",
+      "description": "The name of the organisation managing the toilet (eg, your council name, or a business name.)",
+      "type": "string",
+      "format": "default"
+    },
   ]
 }
